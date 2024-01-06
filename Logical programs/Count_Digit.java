@@ -3,6 +3,7 @@
 public class Count_Digit {
 
 	public static void main(String[] args) {
+		// hello new changes
 		
 		int n=12345;
 		int count=0;
