@@ -7,7 +7,7 @@ public class Count_Even_Odd {
 		int n=12345;
 		int counteven=0;
 		int countodd=0;
-		
+		//added comments
 		while(n>0)
 		{
 			int rem=n%10;
