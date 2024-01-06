@@ -1,0 +1,207 @@
+<router-outlet></router-outlet>
+
+
+
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-danger">
+                            <h4 class="card-title">Show Application Details</h4>
+                        </div>
+                        <form [formGroup]="applicantForm" (ngSubmit)="onSubmit()">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-id-card-o"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantId"
+                                                    formControlName="applicantId">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantFname"
+                                                    formControlName="applicantFname">
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantLname"
+                                                    formControlName="applicantLname">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantMobileno"
+                                                    formControlName="applicantMobileno">
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantEmailid"
+                                                    formControlName="applicantEmailid">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantDob"
+                                                    formControlName="applicantDob">
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-industry"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control"
+                                                    placeholder="applicantOccupation"
+                                                    formControlName="applicantOccupation">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-id-card"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantAadharno"
+                                                    formControlName="applicantAadharno">
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-id-card"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantPanno"
+                                                    formControlName="applicantPanno">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-rupee"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="applicantLoanamt"
+                                                    formControlName="applicantLoanamt">
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-star"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="cibilScore"
+                                                    formControlName="cibilScore">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-info"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="status"
+                                                    formControlName="status">
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div formGroupName="loanSanction">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fa fa-id-card"></i>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="loanSanctionId"
+                                                        formControlName="loanSanctionId">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fa fa-rupee"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="loanAmount"
+                                                        formControlName="loanAmount">
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div>
+                                                    <input type="date" class="form-control" placeholder="sanctionDate"
+                                                        formControlName="sanctionDate">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fa fa-comment"></i>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="remark"
+                                                        formControlName="remark">
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="sanctionLetter"
+                                                        formControlName="sanctionLetter">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <button class="btn btn-danger pull-right" (click)="goBack()">Back</button>
+                                    <button class="btn btn-success pull-right">Submit</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </form>  
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
